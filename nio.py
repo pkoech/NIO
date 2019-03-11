@@ -14,10 +14,10 @@ This line directs the system to always run scripts with sh, rather than another 
 3. Assume you have a list `x = ["table", "chair", "cup", "fork"]`. Write a function to write the contents of this list to a file, one item per line.
 
 	``def write_to_file():
-		## create a file call f
+	## create a file call f
 		with open(‘nio.txt) as f:
-            for item in x:
-		        f.write(“s\n”% item)
+            		for item in x:
+		        	f.write(“s\n”% item)
 
 ``
 		
