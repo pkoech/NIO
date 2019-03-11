@@ -10,7 +10,7 @@ We expect this quiz to take about one to two hours.
 
 
 2. What does the line `#!/bin/sh` do at the beginning of a file?
-This line directs the system to always run scripts with sh, rather than another shell. ‘/bin/sh’ is an executable representing the system shell. 
+This line directs the system to always run scripts with sh, rather than another shell. ‘/bin/sh’ is an executable representing the system shell.
 3. Assume you have a list `x = ["table", "chair", "cup", "fork"]`. Write a function to write the contents of this list to a file, one item per line.
 
 	``def write_to_file():
@@ -18,20 +18,50 @@ This line directs the system to always run scripts with sh, rather than another 
 		with open(‘nio.txt) as f:
             		for item in x:
 		        	f.write(“s\n”% item)
+	``
 
-``
-		
 
 4. Write another function to read the file from the previous question, and return the same list of items. (Hint: What about non-printing characters?)
 
 
 5. Write a function to calculate the factorial of number.
+	`def factorial(n):
+		if n < 1:
+			return 1
+		else:
+			return n*factorial(n-1)
+	`
 
 
 6. Write a function to generate the n-th element of the sequence 2, 1, 3, 4, 7, 11, 18,...
+	`def generate_nth_sequence_number():
+
+
+	`
 
 
 7. Write a function to determine if a number is a prime.
+	`def is_prime(n):
+	    # 0 and 1 are not primes
+	    if n < 2:
+	        return False
+
+	    # 2 is the only even prime number
+	    if n == 2:
+	        return True
+
+	    # all other even numbers are not primes
+	    if not n & 1:
+	        return False
+
+	    # range starts with 3 and only needs to go up
+	    # the square root of n for all odd numbers
+	    for x in range(3, int(n**0.5) + 1, 2):
+	        if n % x == 0:
+	            return False
+
+	    return True
+	`
 
 
 8. Write a class with a method that determines if a word is a palindrome.
@@ -63,7 +93,7 @@ This line directs the system to always run scripts with sh, rather than another 
 14. How many tests would you need in order to test an arbitrary state machine? (Is there an upper bound?)
 
 
-15. Examine the following Python code, add comments, and offer suggestions to make this more readable and robust. Context: an Armstrong number is one that can be written as a sum of cubes of its digits. For example, 153 is an Armstrong number is equal to 1^3 + 5^3 + 3^3 = 1 + 125 + 27. 
+15. Examine the following Python code, add comments, and offer suggestions to make this more readable and robust. Context: an Armstrong number is one that can be written as a sum of cubes of its digits. For example, 153 is an Armstrong number is equal to 1^3 + 5^3 + 3^3 = 1 + 125 + 27.
 
 def armstrong(n):
     res = 0
@@ -75,5 +105,3 @@ def armstrong(n):
     if orig == res:
         return True
     return False
-
-
