@@ -199,8 +199,8 @@ Retransmission of lost packets is possible in TCP, but not in UDP while there is
 
 
 13. Pick the invalid IP address(es): a) 127.0.0.1,  b) 0.0.0.0,  c) 127.256.365.0
-``	
-c is invalid because 256 and 365 is greater than 255.
+```	
+ 127.256.365.0 is invalid because 256 and 365 is greater than 255
 
 ```
 
