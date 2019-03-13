@@ -40,25 +40,44 @@ We expect this quiz to take about one to two hours.
 
 
 6. Write a function to generate the n-th element of the sequence 2, 1, 3, 4, 7, 11, 18,...
-	```python
+``` . python
+
 The above sequence can be expressed with this equation:
-	``1/2 (5 fibonacci(n) - LucasL(n))```
+
+	1/2 (5 fibonacci(n) - LucasL(n))
+	where 
+	F_n  is the Fibonacci of n and L_n is the Lucas number of n 
 	
-	def generate_nth_sequence_number():
+
+		
+	1/2 (5 fibonacci(n) - Lucas(n)) 
+		
+
+	
+def generate_nth_sequence_number(n):
+	return 0.5 (5*fibonacci(n) -lucas(n)
 	
 
 
 def fibonacci(n):
+	#base case
     if n == 0: 
     	return 0
     elif n == 1: 
     	return 1
     else: 
     	return fibonacci(n-1)+fibonacci(n-2)	
-		
-		
-
-	```
+def lucas(n) : 
+      
+    # Base cases  
+    if (n == 0) : 
+        return 2
+    if (n == 1) : 
+        return 1
+  
+    # recurrence relation  
+    return lucas(n - 1) + lucas(n - 2)  
+```
 
 
 7. Write a function to determine if a number is a prime.
