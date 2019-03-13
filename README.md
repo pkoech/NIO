@@ -26,14 +26,23 @@ This line directs the system to always run scripts with sh, rather than another 
 
 	def write_to_file():
 	## create a file call f
-		with open(‘nio.txt) as f:
+		with open("nio.txt") as f:
             		for item in x:
-		        	f.write(“s\n”% item)
+		        	f.write(“s\n” % item)
 ```
 
 
 4. Write another function to read the file from the previous question, and return the same list of items. (Hint: What about non-printing characters?)
+```
+def read_file("nio.txt", "r"):
+	f = open("demofile.txt", "r")
 
+print(f.read())
+
+
+
+
+```
 
 5. Write a function to calculate the factorial of number.
 ``` python
