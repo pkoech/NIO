@@ -40,10 +40,25 @@ We expect this quiz to take about one to two hours.
 
 
 6. Write a function to generate the n-th element of the sequence 2, 1, 3, 4, 7, 11, 18,...
-	`def generate_nth_sequence_number():
+	```python
+The above sequence can be expressed with this equation:
+	``1/2 (5 fibonacci(n) - LucasL(n))```
+	
+	def generate_nth_sequence_number():
+	
 
 
-	`
+def fibonacci(n):
+    if n == 0: 
+    	return 0
+    elif n == 1: 
+    	return 1
+    else: 
+    	return fibonacci(n-1)+fibonacci(n-2)	
+		
+		
+
+	```
 
 
 7. Write a function to determine if a number is a prime.
@@ -90,7 +105,19 @@ class Person:
 
 
 9. Write a function to sum the bits of a number. For example `sum_bits(2) == 1`, `sum_bits(3) == 2`.
-
+	``` python 
+	
+	def  countSetBits(n): 
+    		count = 0
+   	 	while (n): 
+        		count += n & 1
+       				n >>= 1
+    		return count 
+  
+	
+	
+	
+	```
 
 10. What is the difference between a logical/boolean OR operation, and a bitwise OR operation? In other words, what is happening in this snippet from a Python interactive session:
 
@@ -105,19 +132,27 @@ class Person:
 
 11. What is a bit mask? If you had `data = 0b01000010`, how would you toggle the seventh bit from 1 to 0?
 
-```
+```  python
 A mask defines which bits you want to keep, and which bits you want to clear. This is done by applying a mask value with bitwise operations - AND, OR and XOR. 
 
 For this case to toggle the seventh bit from one to 0 we need to AND data with a value with a 0 on the sevent 0.
- ```python
+
  def mask_data(data):
  	value  = 0b01000000
  data = data XOR value
- ```
+ 
 
 ```
 
 12. What are the differences between TCP and UDP? (List one or two sentences.)
+
+```
+| TCP  | UDP |
+| ------------- | ------------- |
+| TCP is connection oriented  | UDP is the Datagram oriented protocol.  |
+| TCP is reliable as it guarantees delivery of data to the destination router.  | The delivery of data to the destination cannot be guaranteed in UDP. |
+|Retransmission of lost packets is possible in TCP, but not in UDP|There is no retransmission of lost packets in User Datagram Protocol (UDP).|
+```
 
 
 13. Pick the invalid IP address(es): a) 127.0.0.1,  b) 0.0.0.0,  c) 127.256.365.0
