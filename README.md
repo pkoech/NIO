@@ -34,11 +34,13 @@ This line directs the system to always run scripts with sh, rather than another 
 
 4. Write another function to read the file from the previous question, and return the same list of items. (Hint: What about non-printing characters?)
 ```
-def read_file("nio.txt", "r"):
-	f = open("demofile.txt", "r")
-
-print(f.read())
-
+def read_file("nio.txt"):
+	res = []
+	file = open(“nio.txt”, “r”) 
+ 	for line in file.readlines():
+		res.extend(line.split(' '))
+	return res
+   	
 
 
 
