@@ -61,7 +61,6 @@ def generate_nth_sequence_number(n):
 
 
 
-```python
 def fibonacci(n):
 	#base case
     if n == 0: 
@@ -70,9 +69,6 @@ def fibonacci(n):
     	return 1
     else: 
     	return fibonacci(n-1)+fibonacci(n-2)	
-```
-```python
-
 
 def lucas(n) : 
       
