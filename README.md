@@ -108,9 +108,12 @@ class Person:
 ```
 A mask defines which bits you want to keep, and which bits you want to clear. This is done by applying a mask value with bitwise operations - AND, OR and XOR. 
 
-For this case to toggle the sevent bit from one to 0 we need to AND data with a value with a 0 on the sevent 0.
- value  = 0b01000000
- res = data XOR value
+For this case to toggle the seventh bit from one to 0 we need to AND data with a value with a 0 on the sevent 0.
+ ```python
+ def mask_data(data):
+ 	value  = 0b01000000
+ data = data XOR value
+ ```
 
 ```
 
