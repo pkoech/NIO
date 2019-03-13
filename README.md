@@ -78,6 +78,12 @@ class Person:
    
 
   def is_palindrome(self, string):
+  	if string == reverse(string):
+		return True
+	return False
+	
+  def reverse(s):
+  	return s[::-1]
   	
   ```
 
