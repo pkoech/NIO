@@ -28,7 +28,7 @@ This line directs the system to always run scripts with sh, rather than another 
 	## create a file call f
 		with open("nio.txt") as f:
             		for item in x:
-		        	f.write('s\\n' % item)
+		        	f.write('s\n' % item)
 ```
 
 
@@ -63,10 +63,7 @@ The above sequence can be expressed with this equation:
 
 	1/2 (5 fibonacci(n) - LucasL(n))
 	where 
-	F_n  is the Fibonacci of n and L_n is the Lucas number of n 
-	
-
-		
+	F_n  is the Fibonacci of n and L_n is the Lucas number of n 		
 	1/2 (5 fibonacci(n) - Lucas(n)) 
 			
 def generate_nth_sequence_number(n):
@@ -203,7 +200,7 @@ Retransmission of lost packets is possible in TCP, but not in UDP while there is
 
 13. Pick the invalid IP address(es): a) 127.0.0.1,  b) 0.0.0.0,  c) 127.256.365.0
 ``	
-b is invalid
+c is invalid because 256 and 365 is greater than 255.
 
 ```
 
