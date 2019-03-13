@@ -11,7 +11,8 @@ We expect this quiz to take about one to two hours.
 
 1. How is `**` used as a unary operator in Python? In other words, when you see someone make a call to a function, `some_func(**kwargs)`, what is generally happening?
 
-```** unpacks the contents of a dictionary into the function call.
+```
+** unpacks the contents of a dictionary into the function call.
 
 ```
 
