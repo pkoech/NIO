@@ -40,6 +40,7 @@ We expect this quiz to take about one to two hours.
 
 
 6. Write a function to generate the n-th element of the sequence 2, 1, 3, 4, 7, 11, 18,...
+
 ```
 The above sequence can be expressed with this equation:
 
@@ -50,7 +51,8 @@ The above sequence can be expressed with this equation:
 
 		
 	1/2 (5 fibonacci(n) - Lucas(n)) 
-		
+	
+	```	
 	
 ```python
 #this is the function that generates the nth element of the sequence using fibonacci sequence and lucas sequence
