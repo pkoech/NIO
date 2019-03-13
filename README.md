@@ -13,7 +13,9 @@ We expect this quiz to take about one to two hours.
 
 
 2. What does the line `#!/bin/sh` do at the beginning of a file?
-*This line directs the system to always run scripts with sh, rather than another shell. ‘/bin/sh’ is an executable representing the system shell*
+```
+This line directs the system to always run scripts with sh, rather than another shell. ‘/bin/sh’ is an executable representing the system shell
+```
 3. Assume you have a list `x = ["table", "chair", "cup", "fork"]`. Write a function to write the contents of this list to a file, one item per line.
 
 ```python
@@ -41,7 +43,7 @@ We expect this quiz to take about one to two hours.
 
 6. Write a function to generate the n-th element of the sequence 2, 1, 3, 4, 7, 11, 18,...
 
-```
+``` python
 The above sequence can be expressed with this equation:
 
 	1/2 (5 fibonacci(n) - LucasL(n))
@@ -51,13 +53,12 @@ The above sequence can be expressed with this equation:
 
 		
 	1/2 (5 fibonacci(n) - Lucas(n)) 
-		
-``` python	
+			
 def generate_nth_sequence_number(n):
 	#this is the function that generates the nth element of the sequence using fibonacci sequence and lucas sequence
 
 	return 0.5 (5*fibonacci(n) -lucas(n)
-```
+
 
 
 ```python
