@@ -52,7 +52,7 @@ The above sequence can be expressed with this equation:
 		
 	1/2 (5 fibonacci(n) - Lucas(n)) 
 		
-```	
+``` python	
 def generate_nth_sequence_number(n):
 	#this is the function that generates the nth element of the sequence using fibonacci sequence and lucas sequence
 
@@ -137,7 +137,7 @@ class Person:
     		count = 0
    	 	while (n): 
         		count += n & 1
-       				n >>= 1
+       			n >>= 1
     		return count 
   
 	
@@ -154,6 +154,17 @@ class Person:
 2
 >>> a | b
 3
+
+````
+ First logical  OR operator will return 2 because logical operator will perform **short circuit** logic, meaning that if the outcome is known after only checking the first condition, the second condition is ignored. In this case the outcome is know after checking if a is True. If the first of the two evaluates to true, then the result will be true regardless of the second condition, and therefore the second condition will not be evaluated.
+ 
+Bitwise OR operator evaluates each bit of two expressions i.e is performs 0b10 OR 0b11 and the results is 0b11 because it checks 1 OR 0 which gives 1 and the checks 1 OR 1 which gives 1 thus the result 0b11
+
+ 
+ 
+ 
+
+````
 
 
 11. What is a bit mask? If you had `data = 0b01000010`, how would you toggle the seventh bit from 1 to 0?
