@@ -13,7 +13,7 @@ We expect this quiz to take about one to two hours.
 
 
 2. What does the line `#!/bin/sh` do at the beginning of a file?
-This line directs the system to always run scripts with sh, rather than another shell. ‘/bin/sh’ is an executable representing the system shell
+*This line directs the system to always run scripts with sh, rather than another shell. ‘/bin/sh’ is an executable representing the system shell*
 3. Assume you have a list `x = ["table", "chair", "cup", "fork"]`. Write a function to write the contents of this list to a file, one item per line.
 
 ```python
@@ -72,6 +72,15 @@ This line directs the system to always run scripts with sh, rather than another 
 
 
 8. Write a class with a method that determines if a word is a palindrome.
+``` python
+class Person:
+  def __init__(self):
+   
+
+  def is_palindrome(self, string):
+  	
+  ```
+
 
 
 9. Write a function to sum the bits of a number. For example `sum_bits(2) == 1`, `sum_bits(3) == 2`.
