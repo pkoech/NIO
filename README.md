@@ -13,30 +13,30 @@ We expect this quiz to take about one to two hours.
 
 
 2. What does the line `#!/bin/sh` do at the beginning of a file?
-This line directs the system to always run scripts with sh, rather than another shell. ‘/bin/sh’ is an executable representing the system shell.
+This line directs the system to always run scripts with sh, rather than another shell. ‘/bin/sh’ is an executable representing the system shell
 3. Assume you have a list `x = ["table", "chair", "cup", "fork"]`. Write a function to write the contents of this list to a file, one item per line.
 
-	```python
+```python
 
 	def write_to_file():
 	## create a file call f
 		with open(‘nio.txt) as f:
             		for item in x:
 		        	f.write(“s\n”% item)
-	``
+```
 
 
 4. Write another function to read the file from the previous question, and return the same list of items. (Hint: What about non-printing characters?)
 
 
 5. Write a function to calculate the factorial of number.
-	``` python
+``` python
 	def factorial(n):
 		if n < 1:
 			return 1
 		else:
 			return n*factorial(n-1)
-	```
+```
 
 
 6. Write a function to generate the n-th element of the sequence 2, 1, 3, 4, 7, 11, 18,...
