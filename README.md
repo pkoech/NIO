@@ -40,7 +40,7 @@ We expect this quiz to take about one to two hours.
 
 
 6. Write a function to generate the n-th element of the sequence 2, 1, 3, 4, 7, 11, 18,...
-``` . python
+```  python
 
 The above sequence can be expressed with this equation:
 
@@ -54,13 +54,14 @@ The above sequence can be expressed with this equation:
 		
 
 	
-```
+```python
 def generate_nth_sequence_number(n):
 	return 0.5 (5*fibonacci(n) -lucas(n)
 ```
 
 
-```def fibonacci(n):
+```python
+def fibonacci(n):
 	#base case
     if n == 0: 
     	return 0
@@ -69,7 +70,9 @@ def generate_nth_sequence_number(n):
     else: 
     	return fibonacci(n-1)+fibonacci(n-2)	
 ```
-```
+```python
+
+
 def lucas(n) : 
       
     # Base cases  
