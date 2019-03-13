@@ -178,11 +178,11 @@ For this case to toggle the seventh bit from one to 0 we need to AND data with a
 12. What are the differences between TCP and UDP? (List one or two sentences.)
 
 ```
-| TCP  | UDP |
-| ------------- | ------------- |
-| TCP is connection oriented  | UDP is the Datagram oriented protocol.  |
-| TCP is reliable as it guarantees delivery of data to the destination router.  | The delivery of data to the destination cannot be guaranteed in UDP. |
-|Retransmission of lost packets is possible in TCP, but not in UDP|There is no retransmission of lost packets in User Datagram Protocol (UDP).|
+                                          
+TCP is connection oriented  while UDP is the Datagram oriented protocol.  
+TCP is reliable as it guarantees delivery of data to the destination router. The delivery of data to the destination cannot be guaranteed in UDP. 
+Retransmission of lost packets is possible in TCP, but not in UDP while there is no retransmission of lost packets in User Datagram Protocol (UDP).
+
 ```
 
 
