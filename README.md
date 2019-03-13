@@ -191,9 +191,9 @@ For this case to toggle the seventh bit from one to 0 we need to AND data with a
 
 ```
                                           
-TCP is connection oriented  while UDP is the Datagram oriented protocol.  
-TCP is reliable as it guarantees delivery of data to the destination router. The delivery of data to the destination cannot be guaranteed in UDP. 
-Retransmission of lost packets is possible in TCP, but not in UDP while there is no retransmission of lost packets in User Datagram Protocol (UDP).
+1.TCP is connection oriented  while UDP is the Datagram oriented protocol.  
+2.TCP is reliable as it guarantees delivery of data to the destination router. The delivery of data to the destination cannot be guaranteed in UDP. 
+3.Retransmission of lost packets is possible in TCP, but not in UDP while there is no retransmission of lost packets in User Datagram Protocol (UDP).
 
 ```
 
@@ -206,6 +206,9 @@ Retransmission of lost packets is possible in TCP, but not in UDP while there is
 
 
 14. How many tests would you need in order to test an arbitrary state machine? (Is there an upper bound?)
+```
+I would need to test every transition; the number of test should at least the number of transitions in the state machine.
+```
 
 
 15. Examine the following Python code, add comments, and offer suggestions to make this more readable and robust. Context: an Armstrong number is one that can be written as a sum of cubes of its digits. For example, 153 is an Armstrong number is equal to 1^3 + 5^3 + 3^3 = 1 + 125 + 27.
