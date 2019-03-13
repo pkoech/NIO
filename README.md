@@ -146,7 +146,7 @@ class Person:
 	```
 
 10. What is the difference between a logical/boolean OR operation, and a bitwise OR operation? In other words, what is happening in this snippet from a Python interactive session:
-
+```
 >>> a = 0b10
 >>> b = 0b11
 >>>
@@ -155,14 +155,11 @@ class Person:
 >>> a | b
 3
 
-````
+
  First logical  OR operator will return 2 because logical operator will perform **short circuit** logic, meaning that if the outcome is known after only checking the first condition, the second condition is ignored. In this case the outcome is know after checking if a is True. If the first of the two evaluates to true, then the result will be true regardless of the second condition, and therefore the second condition will not be evaluated.
  
 Bitwise OR operator evaluates each bit of two expressions i.e is performs 0b10 OR 0b11 and the results is 0b11 because it checks 1 OR 0 which gives 1 and the checks 1 OR 1 which gives 1 thus the result 0b11
 
- 
- 
- 
 
 ````
 
