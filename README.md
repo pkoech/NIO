@@ -54,12 +54,13 @@ The above sequence can be expressed with this equation:
 		
 
 	
+```
 def generate_nth_sequence_number(n):
 	return 0.5 (5*fibonacci(n) -lucas(n)
-	
+```
 
 
-def fibonacci(n):
+```def fibonacci(n):
 	#base case
     if n == 0: 
     	return 0
@@ -67,6 +68,8 @@ def fibonacci(n):
     	return 1
     else: 
     	return fibonacci(n-1)+fibonacci(n-2)	
+```
+```
 def lucas(n) : 
       
     # Base cases  
@@ -76,7 +79,8 @@ def lucas(n) :
         return 1
   
     # recurrence relation  
-    return lucas(n - 1) + lucas(n - 2)  
+    return lucas(n - 1) + lucas(n - 2) 
+    ```
 ```
 
 
