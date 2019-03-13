@@ -11,6 +11,9 @@ We expect this quiz to take about one to two hours.
 
 1. How is `**` used as a unary operator in Python? In other words, when you see someone make a call to a function, `some_func(**kwargs)`, what is generally happening?
 
+```** unpacks the contents of a dictionary into the function call.
+
+```
 
 2. What does the line `#!/bin/sh` do at the beginning of a file?
 ```
@@ -187,7 +190,10 @@ Retransmission of lost packets is possible in TCP, but not in UDP while there is
 
 
 13. Pick the invalid IP address(es): a) 127.0.0.1,  b) 0.0.0.0,  c) 127.256.365.0
-*b is invalid*
+``	
+b is invalid
+
+```
 
 
 14. How many tests would you need in order to test an arbitrary state machine? (Is there an upper bound?)
@@ -196,6 +202,8 @@ Retransmission of lost packets is possible in TCP, but not in UDP while there is
 15. Examine the following Python code, add comments, and offer suggestions to make this more readable and robust. Context: an Armstrong number is one that can be written as a sum of cubes of its digits. For example, 153 is an Armstrong number is equal to 1^3 + 5^3 + 3^3 = 1 + 125 + 27.
 
 ``` python
+
+
 # rename the function to is_armstrong(n)
 # more descriptive of what it's doing
 def armstrong(n):
