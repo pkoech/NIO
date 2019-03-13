@@ -196,14 +196,22 @@ Retransmission of lost packets is possible in TCP, but not in UDP while there is
 15. Examine the following Python code, add comments, and offer suggestions to make this more readable and robust. Context: an Armstrong number is one that can be written as a sum of cubes of its digits. For example, 153 is an Armstrong number is equal to 1^3 + 5^3 + 3^3 = 1 + 125 + 27.
 
 ``` python
+# rename the function to is_armstrong(n)
+# more descriptive of what it's doing
 def armstrong(n):
-    res = 0
-    orig = n
+	"""
+	I would rename the variables as below so that
+	they are more descriptive.
+	I would also use the longer version of variable
+	assignment since it is more readable that way.
+	"""
+    res = 0 # rename to sum_so_far 
+    orig = n # rename to original
     while n != 0:
-        remainder = n % 10
-        res += remainder**3
-        n //= 10
-    if orig == res:
+        remainder = n % 10 # last_digit = n % 10
+        res += remainder**3 # sum_so_far = sum_so_far + last_digit**3
+        n //= 10	# n = n // 10
+    if orig == res: # original == sum_so_far
         return True
     return False
     ```
