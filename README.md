@@ -51,10 +51,8 @@ The above sequence can be expressed with this equation:
 
 		
 	1/2 (5 fibonacci(n) - Lucas(n)) 
+		
 	
-	```	
-	
-```python
 #this is the function that generates the nth element of the sequence using fibonacci sequence and lucas sequence
 def generate_nth_sequence_number(n):
 	return 0.5 (5*fibonacci(n) -lucas(n)
