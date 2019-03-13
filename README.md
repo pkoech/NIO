@@ -28,7 +28,7 @@ This line directs the system to always run scripts with sh, rather than another 
 	## create a file call f
 		with open("nio.txt") as f:
             		for item in x:
-		        	f.write(“s\n” % item)
+		        	f.write('s\\n' % item)
 ```
 
 
