@@ -30,12 +30,13 @@ This line directs the system to always run scripts with sh, rather than another 
 
 
 5. Write a function to calculate the factorial of number.
-	`def factorial(n):
+	``` python
+	def factorial(n):
 		if n < 1:
 			return 1
 		else:
 			return n*factorial(n-1)
-	`
+	```
 
 
 6. Write a function to generate the n-th element of the sequence 2, 1, 3, 4, 7, 11, 18,...
@@ -46,7 +47,8 @@ This line directs the system to always run scripts with sh, rather than another 
 
 
 7. Write a function to determine if a number is a prime.
-	`def is_prime(n):
+	``` python
+	def is_prime(n):
 	    # 0 and 1 are not primes
 	    if n < 2:
 	        return False
@@ -66,7 +68,7 @@ This line directs the system to always run scripts with sh, rather than another 
 	            return False
 
 	    return True
-	`
+	```
 
 
 8. Write a class with a method that determines if a word is a palindrome.
@@ -100,7 +102,7 @@ This line directs the system to always run scripts with sh, rather than another 
 
 15. Examine the following Python code, add comments, and offer suggestions to make this more readable and robust. Context: an Armstrong number is one that can be written as a sum of cubes of its digits. For example, 153 is an Armstrong number is equal to 1^3 + 5^3 + 3^3 = 1 + 125 + 27.
 
-``
+``` python
 def armstrong(n):
     res = 0
     orig = n
@@ -111,4 +113,4 @@ def armstrong(n):
     if orig == res:
         return True
     return False
-    ``
+    ```
