@@ -78,11 +78,11 @@ class Person:
    
 
   def is_palindrome(self, string):
-  	if string == reverse(string):
+  	if string == self.reverse(string):
 		return True
 	return False
 	
-  def reverse(s):
+  def reverse(self,s):
   	return s[::-1]
   	
   ```
@@ -105,11 +105,13 @@ class Person:
 
 11. What is a bit mask? If you had `data = 0b01000010`, how would you toggle the seventh bit from 1 to 0?
 
+*A mask defines which bits you want to keep, and which bits you want to clear. This is done by applying a mask value with bitwise operations- AND, OR and XOR.*
 
 12. What are the differences between TCP and UDP? (List one or two sentences.)
 
 
 13. Pick the invalid IP address(es): a) 127.0.0.1,  b) 0.0.0.0,  c) 127.256.365.0
+*b is invalid*
 
 
 14. How many tests would you need in order to test an arbitrary state machine? (Is there an upper bound?)
